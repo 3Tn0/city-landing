@@ -1,0 +1,24 @@
+{
+  "name": "city-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3Tn0/city-landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3Tn0/city-landing/issues"
+  },
+  "homepage": "https://github.com/3Tn0/city-landing#readme"
+}

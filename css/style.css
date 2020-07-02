@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: 'Ubunty', sans-serif;
+  font-size: 16px; }
+
+.top {
+  background-size: cover;
+  background-position: 50% 35%;
+  background-repeat: no-repeat; }
+  .top .container {
+    height: 100vh;
+    min-height: 500px;
+    box-shadow: inset -0px -100px 50px 10px #00000080; }
+
+.header {
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 100px; }
+  .header__phone {
+    color: #ffffff;
+    opacity: 0.6;
+    text-transform: uppercase; }
+  .header__call {
+    color: #ffffff;
+    opacity: 0.6;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #ffffff; }
+  .header__logo img {
+    margin-top: -40px; }
+
+.nav-list {
+  left: 0;
+  right: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none; }
+  .nav-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff; }
