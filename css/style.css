@@ -8,11 +8,36 @@ body {
 
 .button {
   color: #ffffff;
-  padding: 24px 60px;
   background-color: #00aaef;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  height: 52px;
+  line-height: 52px;
+  border: none;
+  outline: none;
+  width: 100%; }
+  .button_inline {
+    display: inline-block;
+    padding: 0 60px;
+    width: auto; }
+
+.input {
+  color: #000000;
+  background-color: #eeeeee;
+  text-align: center;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 400; }
+  font-weight: 400;
+  height: 52px;
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 16px; }
+  .input::placeholder {
+    color: #000000; }
 
 .top {
   background-size: cover;
@@ -64,7 +89,7 @@ body {
   padding: 145px 0px; }
   .section__title {
     position: absolute;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 300;
     text-transform: uppercase;
     left: 50%;
@@ -137,6 +162,19 @@ body {
 .gallery__bottom {
   text-align: center;
   margin-top: 60px; }
+
+.consultations .container {
+  display: flex; }
+
+.consultations__text {
+  flex: 2; }
+  .consultations__text h2 {
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 40px; }
+
+.consultations__form {
+  flex: 1; }
 
 body {
   padding-bottom: 540px; }
