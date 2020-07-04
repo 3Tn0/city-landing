@@ -1,27 +1,38 @@
 body
 	margin: 0
-	font-family: 'Ubunty', sans-serif
+	font-family: 'Ubuntu', sans-serif
 	font-size: 16px
-	padding-bottom: 540px 
 
-.text
+.container
+	margin: 0 12%
 	
+.button
+	color: #ffffff
+	padding: 24px 60px
+	background-color: #00aaef
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 400
+
+
+
+
+
 
 .top
 	background-size: cover
 	background-position: 50% 35%
 	background-repeat: no-repeat
-	.container
-		position: relative
-		height: 100vh
-		min-height: 500px
-		box-shadow: inset -0px -100px 50px 10px #00000080
-
+	position: relative
+	height: 100vh
+	min-height: 500px
+	box-shadow: inset -0px -100px 50px 10px #00000080
+	
 .header
-	left: 0
-	right: 0
+	left: 12%
+	right: 12%
 	display: flex
-	justify-content: space-evenly
+	justify-content: space-between
 	position: absolute
 	top: 100px
 	&__phone
@@ -38,49 +49,108 @@ body
 
 	
 .nav-list
-	left: 0
-	right: 0
+	left: 12%
+	right: 12%
 	padding: 0
 	position: absolute
 	bottom: 80px
 	display: flex
 	flex-wrap: wrap
-	justify-content: space-evenly
+	justify-content: space-between
 	list-style-type: none
 	a
 		text-decoration: none
 		text-transform: uppercase
 		color: #ffffff
 
-/////////////////****
-.section:nth-child(odd)
-	background-color: #eeeeee
+/////////////////****best section
+.section
+	position: relative
+	height: 100%
+	width: 100%
+	padding: 145px 0px
+	&__title
+		position: absolute
+		font-size: 36px
+		font-weight: 300
+		text-transform: uppercase
+		left: 50%
+		top: 0
+		transform: translate(-50%, -50%)
+		padding-bottom: 10px
+		&::after,&::before
+			content: ""
+			width: calc( 50% - 18px )
+			position: absolute
+			height: 2px
+			bottom: 0
+			background-color: #00aaef
+		&::after
+			right: 0
+		&::before
+			left: 0
+		img
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translate(-50%,80%)
+	&:nth-child(odd)
+		background-color: #eeeeee
 
+		
 .about
-	display: flex
-	margin-top: 140px
-	margin-bottom: 165px
+	.container
+		display: flex
+		justify-content: flex-end
 	&__best
 		flex: 1
-		margin-left: 10%
 		font-size: 40px
 		text-transform: uppercase
 		font-weight: 200
 		strong
-			font-weight: 700
+			font-weight: 500
 		span
 			color: #00aaef
 	&__text
-		flex: 2
-		margin-left: 10%
+		flex: 1
 		ol
 			padding: 20px 0
 
 
-/////////////////*****
+//////////**********apartments section
 
+.apartments
+	&__photos
+		display: flex
+	&__photo
+		flex: 1
+		height: 260px
+		background-size: cover
+		background-position: 50% 50%
+		&:first-child
+			margin-right: 20px
+	&__photos_mod-right &__photo
+		&:first-child
+			flex: 2
+	
+	&__photos_mod-left &__photo
+		&:last-child
+			flex: 2
+	span
+		color: #00aaef
+	h4
+		font-size: 14px
+		margin-top: 15px
+		margin-bottom: 25px
+
+.gallery__bottom
+	text-align: center
+	margin-top: 60px
+	
+
+/////////////////*****footer
 body
-	padding-bottom: 540px 
+	padding-bottom: 540px
 
 .wrapper
 	background: #fff
